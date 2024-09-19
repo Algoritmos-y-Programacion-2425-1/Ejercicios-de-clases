@@ -17,3 +17,4 @@ else:
         ingredient_selected = "Peperoni"
     else:
         ingredient_selected = "Salmon"
+    print(f"Vegetarian Pizza with Tomate, Mozzarella and {ingredient_selected}")
