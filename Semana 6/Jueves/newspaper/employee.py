@@ -12,6 +12,7 @@ class Boss(Employee):
         print("Supervising my writters:")
         for writer in self.writers:
             print(writer.name)
+            writer.write_article()
     
     def choice_article(self, list_articles):
         pass
