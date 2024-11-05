@@ -21,7 +21,6 @@ def reverse_word(word,index):
     if index == 0:
         return word[index]
     return word[index] + reverse_word(word, index-1)
-    
 
 def main():
     while True:
