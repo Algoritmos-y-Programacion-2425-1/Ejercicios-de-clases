@@ -4,15 +4,15 @@ def main():
     print(lista)
 
 def selection(lista):
-    for i in range(len(lista)):
-        minor = i
-        for j in range(i+1,len(lista)):
-            if lista[j] < lista[minor]:
-                minor = j
-        temp = lista[i]
-        lista[i] = lista[minor]
-        lista[minor] = temp
-        
+    for i in range(len(lista)):#n
+        minor = i #n
+        for j in range(i+1,len(lista)): #n2
+            if lista[j] < lista[minor]: #n2
+                minor = j #n2
+        temp = lista[i] #n
+        lista[i] = lista[minor] #n
+        lista[minor] = temp #n
+        #3n2 + 5n = O(n2)
     return lista    
 
 main()
